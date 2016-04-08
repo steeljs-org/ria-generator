@@ -1,0 +1,36 @@
+.steel-render-stage-scroll
+    .banner
+        .slash
+        .content
+            h5 付费版试用将在 21 天后结束
+            button(type='button',name='submit_btn') 立刻购买付费版
+
+    card
+        nav
+            //- ul.no4
+            //-     li.on 
+            //-         cell 粉丝分析
+            //-     li  
+            //-         cell 内容分析
+            //-     li  
+            //-         cell 互动分析
+            //-     li  
+            //-         cell 行业趋势分析 
+            - var daterange = steel.router.get().query.daterange || 7
+            - var range = [7, 30, 90];
+            tab.split
+                - for(var i=0; i<3; i++)
+                    item(date-range=range[i], class=(range[i]==daterange)?"on":"") #{range[i]}天数据
+    
+    div(node-type="card-box")        
+    card.bottom
+        .ft
+            cell
+                a(href="http://weibo.socialbakers.com/static/user-guide/weibo_data_center_guide.html") 用户指南
+            | |
+            cell
+                a(href="mailto:businessapi@staff.sina.com.cn") 客服邮箱
+            | |
+            cell
+                a 400 0960 960
+    .ft

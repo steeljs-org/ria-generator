@@ -1,0 +1,23 @@
+{
+  "name": "ria-generator",
+  "version": "0.0.1",
+  "description": "Scaffold ria-projects",
+  "homepage": "https://github.com/steeljs-org/ria-generator#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steeljs-org/ria-generator.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "template",
+    "generater"
+  ],
+  "author": "Lonefy",
+  "license": "MIT",
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
+}
