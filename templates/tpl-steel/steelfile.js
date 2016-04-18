@@ -3,7 +3,7 @@
  * author: @Lonefy
  */
 var path = require('path');
-var steel = require('steel-commander');
+var steel = require('steel');
  
 steel.config({
     port: 80,
