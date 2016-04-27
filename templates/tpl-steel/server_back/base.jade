@@ -4,7 +4,7 @@ html
         meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
         meta(content='telephone=no', name='format-detection')
         meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1')
-        title 数据中心
+        title Hello
         block baseCss
             link(href='http://js.t.sinajs.cn/c2p/event/dss/lib/base.css', type='text/css', rel='stylesheet')
         
@@ -24,4 +24,7 @@ html
         script(src="http://js.t.sinajs.cn/c2p/event/dss/lib/lib.js")
         script(src="http://js.t.sinajs.cn/c2p/event/dss/app.js")
         script.
+            window['adaptive'].desinWidth = 640;
+            window['adaptive'].baseFont = 18;
+            window['adaptive'].init();
             steel.boot('app');

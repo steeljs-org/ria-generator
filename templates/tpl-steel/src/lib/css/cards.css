@@ -1,0 +1,490 @@
+@charset "UTF-8";
+/**
+*@function: H5公用样式表 - CARD
+*@html: base/cards.html
+*@author: zhouxuan1
+*@remark: 
+**/
+
+/*wrap_1: 阴影+内间距+背景色*/
+.card_wrap_1{
+    padding: 0.625rem 0.75rem;
+    background: #fefefe;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.14);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.14);
+}
+/*wrap_2: 阴影+背景色，多用于包裹多个小card*/
+.card_wrap_2{
+    background: #fefefe;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.14);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.14);
+}
+/*wrap_3: 内间距+背景色,多用于一个card的内部小card*/
+.card_wrap_3{
+    background: #fefefe;
+    padding: 0.625rem 0.75rem;
+} 
+/*wrap_shadow: 阴影*/
+.card_wrap_shadow{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.14);
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.14);
+}
+/*wrap_bottom: 底部间距*/
+.card_wrap_mt{
+    margin-top:  0.625rem;
+}
+.card_wrap_1 .table,
+.card_wrap_2 .table{
+    table-layout: fixed;
+}
+/* .card_wrap_mt{
+    margin-bottom:  0.625rem;
+}  */
+/*card标题：无背景色*/
+.card_title{
+    margin:0;
+    padding: 0.625rem 0.75rem 0.25rem;
+    font-size: 12px;
+    color: #828282;
+    font-weight: normal;
+} 
+[class*='card_wrap_'][class*='icon_arr_r']{
+    padding-right: 28px;
+}
+
+/*card标题：无背景色*/
+.card_link{
+
+}
+.card_link_more{
+    padding: 0 22px 0;
+} 
+.card_icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../../../img/coupon/icons_lead.png) 0 0 no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.card_cols_2,
+.card_cols_3,
+.card_cols_4{
+    overflow: hidden;
+}
+.card_cols_2 a,
+.card_cols_3 a,
+.card_cols_4 a{
+    display: block;
+    margin: 6px 0;
+    padding: 0 8px 0 12px;
+    border-right: 1px solid #f0f0f0;
+    color: #333;
+    font-size: 16px;
+    line-height: 32px;
+}
+.card_cols_3 a,
+.card_cols_4 a{
+    margin: 10px 0;
+}
+.card_cols_2 li:last-child a,
+.card_cols_3 li:last-child a,
+.card_cols_4 li:last-child a{
+    border-right: none;
+    padding-left: 0.5rem;
+}
+.card_cols_3 li:last-child a{
+    border-right: 1px solid #f0f0f0;
+}
+.card_cols_3 a{
+    height: 34px;
+    line-height: 1;
+}
+.card_cols_3 a p:first-child{
+    padding-bottom: 6px;
+}
+.card_cols_4 a p:first-child{
+    height: 36px;
+}
+
+.card_form dt{
+    float: left;
+    width: 60px;
+    padding-right: 5px;
+    font-size: 15px;
+    color: #929292;
+}
+.card_form dd{
+    margin-left: 65px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+
+
+
+
+/* 
+.card_link_more[class*="icon_arr_"]:after{
+    border-color: #929292;
+} */
+
+/*card_w为字体样式包裹框*/
+/* .card_w .wrap_3{
+    line-height: 1.5;
+}
+.card_w .wrap_3 img{
+    max-width: 100%;
+}
+.card_w .c_main_title{
+    color: #929292;
+    font-size: 0.9375rem;
+    margin-bottom: 8px;
+}
+.card_w .c_sum{
+    color: #6a6a6a;
+    font-size: 0.75rem;
+} */
+
+
+/*图片card*/
+.card_pic_1{
+
+}
+.card_pic_1 li,
+.card_pic_2 li {
+    float: left;
+    padding-left: 8px;
+}
+.card_pic_1 li:first-child,
+.card_pic_2 li:first-child {
+    padding-left: 0;
+}
+.card_pic_1 li > div,
+.card_pic_2 li > div{
+    position: relative;
+}
+.card_pic_1 li > div img,
+.card_pic_2 li > div img{
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+.card_pic_1 li [class*="icon_u"],
+.card_pic_2 li [class*="icon_u"]{
+    position: absolute;
+    bottom: 0;
+    right: -4px;
+    bottom: -4px;
+}
+.card_pic_1 p,
+.card_pic_2 p{
+    width: 64px;
+    margin-top: 3px;
+    text-align: center;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* .card_wrap_2[class*='icon_arr_r']{
+    padding-right: 0;
+} */
+.card_pic_2{
+    padding:0.625rem 0.75rem;
+}
+.card_pic_2 li > div img{
+    width: 34px;
+    height: 34px;
+}
+/* .wrap_pic_1 li img {
+    width: 34px;
+    height: 34px; 
+}
+.wrap_pic_1 li img {
+    width: 64px;
+    height: 64px; 
+} */
+
+.card_mix_1,
+.card_mix_2{
+    padding: 0.625rem 0.75rem;
+}
+.icon_arr_r .card_mix_1,
+.card_mix_action.card_mix_1,
+.icon_arr_r .card_mix_2,
+.card_mix_action.card_mix_2{
+    padding-right: 0;
+}
+/* .card_mix_{
+    padding-right: 12px;
+} */
+.card_mix_1 dt,
+.card_mix_2 dt{
+    position: relative;
+    height: 70px;
+    width: 80px;
+}
+.card_mix_1 dt .pic,
+.card_mix_2 dt .pic{
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    background-size: cover;
+}
+.card_mix_1 dt [class*="icon_u"],
+.card_mix_2 dt [class*="icon_u"]{
+    position: absolute;
+    right: 4px;
+    bottom: -4px;
+}
+.card_mix_1 dd,
+.card_mix_2 dd{
+    line-height: 1.4;
+    vertical-align: top;
+}
+.card_mix_1 dd .title{
+    max-height: 42px;
+    overflow: hidden;
+}
+.card_mix_1 dd .desc{
+    margin-top: 6px;
+}
+.card_mix_1 .action{
+    width: 76px;
+    height: 70px;
+    vertical-align: middle;
+    text-align: center;
+}
+/*二行混排card*/
+.card_mix_2 dt{
+    width: 60px;
+    height: 50px;
+}
+.card_mix_2 dt .pic{
+    width: 50px;
+    height: 50px;
+}
+.card_mix_2 dd .title{
+    height: 20px;
+}
+.card_mix_2 dd .desc{
+    margin-top: 10px;
+}
+.card_mix_2 .action{
+    width: 76px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.card_mix_1 .price{
+    font-size: 12px;
+    font-family: Arial;
+    color: #ff8200;
+}
+
+.card_mix_1 .pro_line{
+    position: relative;
+    margin-top: 2px;
+}
+.card_mix_1 .price strong{
+    font-weight: bold;
+}
+.card_mix_1 .price_org{
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #929292;
+}
+.card_mix_1 .way{
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    font-size: 12px;
+    color: #929292;
+}
+
+
+
+/*商品card*/
+/* .product_card{
+    background: #fefefe;
+    padding: 0.625rem 0.75rem;
+    position: relative;
+    z-index: 2;
+}
+.product_card dt{
+    float: left;
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+.product_card dt img{
+    display: block; 
+    width: 70px;
+    height: 70px;
+}
+.product_card dt .pic{
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    background-size: cover;
+}
+.product_card dt .user_icon{
+    position: absolute;
+    bottom: -3px;
+    right: -6px; 
+}
+.product_card dd .name{
+    font-size: 0.9375rem;
+    margin:0 0 .5rem;
+    padding: 5px 0 0 0;
+    overflow:hidden;
+    word-wrap:break-word;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -webkit-text-overflow:ellipsis;
+    height: 1rem;
+    line-height: 1rem;
+}
+.product_card dd .subname{
+    color: #6a6a6a;
+    margin-bottom: .5rem;
+    overflow:hidden;
+    word-wrap:break-word;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -webkit-text-overflow:ellipsis;
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+.product_card dd .date{
+    color: #707070;
+    margin-bottom: .5rem;
+}
+.product_card dd .fc_orange{
+    color: #ff9200;
+}
+.product_card dd .fc_grey{
+    color: #989898;
+}
+.product_card dd .f_rmb{
+    display: inline-block;
+    color: #ff5b36;
+    font-size: 0.5625rem; 
+    vertical-align: bottom;
+}
+.product_card dd .price{
+    display: inline-block;
+    font-size: 0.9375rem;
+    color: #ff5b36;
+    display: inline-block;
+    margin-right: 0.2rem;
+    vertical-align: bottom;
+}
+.product_card dd .price_org{
+    display: inline-block;
+    color: #989898;
+    font-size: 12px;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    vertical-align: bottom;
+}
+.product_card dd .free{
+    color: #ff5b36;
+    font-size: 0.75rem;
+}
+.product_card dd .discount{
+    display: inline-block;
+    background: #ff8200;
+    border-radius: 5px;
+    padding:0 8px;
+    margin-left: 5px;
+    color: #fff;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    vertical-align: middle;
+}
+.product_card dd.product_card_row1{
+    margin-left: 80px;
+}
+.product_card dd.product_card_row1_r{
+    padding-right: 5rem;
+}
+.product_card dd.product_card_row2{
+    padding: 1rem 0 0; 
+}
+.product_card dd.product_card_rightrow{
+    width: 4.75rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    text-align: center; 
+}
+.product_card dd.product_card_rightrow a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #598abf; 
+}
+.product_card dd.product_card_rightrow i{
+    margin: 25px 0 3px;
+}
+.product_card dd.product_card_rightrow span{
+    color: #598abf;
+    display: block;
+    font-size: 12px;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+}
+.product_card .icon_big_buy{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background: url(../../../img/coupon/ico_couponMgmt.png?id=20141222) no-repeat;
+    background-size: 100%;
+    margin: 0;
+    vertical-align: middle;
+}
+.product_card .icon_big_purchase{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../../../img/coupon/ico_couponMgmt.png?id=20141222) 0 -25px no-repeat;
+    background-size: 100%;
+    margin: 0;
+    vertical-align: middle;
+}
+.product_card .icon_big_gift{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../../../img/coupon/ico_couponMgmt.png?id=20141222) 0 -50px no-repeat;
+    background-size: 100%;
+    margin: 0;
+    vertical-align: middle;
+}
+.product_card .icon_big_addr{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../../../img/coupon/ico_couponMgmt.png?id=20141222) 0 -75px no-repeat;
+    background-size: 100%;
+    margin: 0;
+    vertical-align: middle;
+}
+.product_card .icon_big_letter{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../../../img/coupon/ico_couponMgmt.png?id=20141222) 0 -100px no-repeat;
+    background-size: 100%;
+    margin: 0;
+    vertical-align: middle;
+} */
