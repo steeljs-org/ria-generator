@@ -89,7 +89,7 @@ function dealSrc(isDebug, options) {
     var src = options.src;
     var plumber = options.plumber;
     var srcOptions = {
-        base: path.join(__dirname, src_base)
+        base: path.join(process.cwd(), src_base)
     };
     var htmlJadeFilter = $.filter('**/*.html.jade', { restore: true });
     var jadeFilter = $.filter('**/*.jade', { restore: true });
@@ -179,7 +179,7 @@ function dealSrc(isDebug, options) {
 gulp.task('watchDebug', function () {
     gulp.watch(src_base + '**/*').on('change', function (event) {
         console.log('File ' + event.path + ' was ' + event.type + ':');
-        var filePath = path.relative(__dirname, event.path);
+        var filePath = path.relative(process.cwd(), event.path);
         if (event.type !== 'deleted') {
             dealSrc(true, {
                 src: filePath

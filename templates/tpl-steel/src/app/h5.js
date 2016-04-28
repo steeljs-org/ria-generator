@@ -8,7 +8,6 @@ steel.config({
   useCssPrefix: true,
   router: [
     ['/h5/index', 'components/h5/index/ctrl'],
-    ['/h5/m01', 'components/h5/m01/ctrl']
   ]
 });
 

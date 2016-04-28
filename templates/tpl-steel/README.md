@@ -1,18 +1,12 @@
-# 数据统计系统-前端
+###Steps
 
-## 相关信息
-    1. 服务端口 8103
+```javascript
+npm install steel -g
+steel init -t steel
+npm install
+steel server
+```
+###HOST
+`127.0.0.1 back.test.cn res.test.cn`
 
-
-## 开发
-    PC下兼容 https://github.com/es-shims/es5-shim
-    静态文件的访问：http://js.t.sinajs.cn/c2p/event/dss/
-
-## 上线流程
-    同event上线流程
-
-## 相关工具
-
-    
-## md5版本号
-
+browser: http://back.test.cn/h5/index.jade
