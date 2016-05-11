@@ -1,6 +1,6 @@
 {
     "name": "ria-generator",
-    "version": "0.0.5",
+    "version": "0.0.51",
     "description": "Scaffold ria-projects",
     "homepage": "https://github.com/steeljs-org/ria-generator#readme",
     "repository": {

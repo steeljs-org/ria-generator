@@ -1,8 +1,8 @@
 #Ria-Generator
 
 ##Scaffold Support
-* steel
-* steel-react
+* steel [more info](https://github.com/steeljs-org/ria-generator/tree/master/templates/tpl-steel)
+* steel-react [more info](https://github.com/steeljs-org/ria-generator/tree/master/templates/tpl-steel-react)
 
 ##Add Your Project Scaffold
 1. You can add your project in the `template` folder.
@@ -12,4 +12,4 @@
 
 ##Change Log
 v0.0.5  11 May 2016 
-add `steel-react` template.
+add `steel-react` template.[more info](https://github.com/steeljs-org/ria-generator/tree/master/templates/tpl-steel-react)
