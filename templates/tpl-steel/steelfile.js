@@ -21,6 +21,6 @@ steel.config({
     back_hostname: '127.0.0.1 back.test.cn', //后端的HOST，目的是真实模拟后端的页面路由请求，提供出前端可仿真的功能，比如 /index 对应 /html/index.html
 })
 
-steel.task("hw", function () {
-    console.log("hello world, Steel v0.1.0");
+steel.task("hw", function() {
+    console.log("hello world, Steel");
 })
